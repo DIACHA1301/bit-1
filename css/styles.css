@@ -1,3 +1,106 @@
-body{
-    background-color: aqua;
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #ef8c41;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .header-logo {
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+  }
+
+  .header-title {
+    font-family: 'Chewy', cursive;
+    font-size: 50px;
+    color: black;
+  }
+
+  .nav-btn {
+    background-color: #f6ebdb;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    margin: 0 10px;
+  }
+
+  .cart-icon {
+    font-size: 50px;
+    cursor: pointer; 
+    margin:  30px;
+    margin-top: 50px;   
+  }
+  .carousel-item{
+    img {
+        padding: 60px;
+        max-height: 600px; 
+        object-fit: cover;
+        width: 100%;
+  } 
 }
+  .categoria-btn {
+    background-color: #c2e4d3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  .categoria-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+  }
+  .producto-img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .card-body p {
+    font-size: 0.9rem;
+  }
+  .precio {
+    font-weight: bold;
+  }
+  .icono-carrito {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .filtro-item {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background-color: #c4e3cd; /* verde suave */
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .filtro-item:hover {
+    background-color: #a5d4b6;
+  }
+
+  .filtro-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .filtro-texto {
+    margin-left: 50px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: #222;
+  }
