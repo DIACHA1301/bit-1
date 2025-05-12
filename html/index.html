@@ -17,8 +17,9 @@
         <div class="container-fluid">
             <header class="d-flex align-items-center justify-content-between py-3">
               <!-- Logo -->
-              <img src="../img/logo.png" alt="Logo" class="header-logo" style="max-width: 100px;" />
-          
+        
+              <img src="../img/logo.png" alt="Logo" class="img-fluid header-logo" />
+        
               <!-- Centro: título y navegación -->
               <div class="text-center flex-grow-1">
                 <div class="header-title mb-3">Ropa U</div>
@@ -31,8 +32,8 @@
               </div>
           
               <!-- Icono carrito -->
-              <div class="cart-icon">
-                🛒
+              <div class="cart-icon"> 
+                <img class="img-fluid" src="../img/carrito.png" alt="carrito">
               </div>
             </header>
           </div>
@@ -55,57 +56,29 @@
       </div>
     </div>
     <!-- Filtros-->
-    <div class="container my-4 d-grid">
-        <div class="d-flex justify-content-between flex-wrap gap-1">
-          <div class="filtro-item col-2" onclick="filtrarPrendas('todos')">
-            <img src="../img/todo.jpeg" alt="Ver Todo" class="filtro-img">
-            <span class="filtro-texto">Ver Todo</span>
-          </div>
-          <div class="filtro-item col-2" onclick="filtrarPrendas('jeans')">
-            <img src="../img/pants.jpg" alt="Jeans" class="filtro-img">
-            <span class="filtro-texto">Jeans</span>
-          </div>
-          <div class="filtro-item col-2" onclick="filtrarPrendas('blusa')">
-            <img src="../img/shirt.jpg" alt="Blusas" class="filtro-img">
-            <span class="filtro-texto">Blusas</span>
-          </div>
-          <div class="filtro-item col-2" onclick="filtrarPrendas('vestido')">
-            <img src="../img/dress.jpg" alt="Vestidos" class="filtro-img">
-            <span class="filtro-texto">Vestidos</span>
-          </div>
-        </div>
-      </div>
-      <!--Productos-->
-      <div class="container my-5">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-      
+     <div class="buttons">
+   <button class="btn d-flex align-items-center gap-3 bg-success bg-opacity-25 rounded-pill px-4 py-2 mb-4 filter-btn" 
+   onclick="mostrarImagenes()">Ver Todo</button>
+   <button class="btn d-flex align-items-center gap-3 bg-success bg-opacity-25 rounded-pill px-4 py-2 mb-4 filter-btn" 
+   onclick="filtrar('pantalon')">Jeans</button>
+   <button class="btn d-flex align-items-center gap-3 bg-success bg-opacity-25 rounded-pill px-4 py-2 mb-4 filter-btn" 
+   onclick="filtrar('blusa')">Blusas</button>
+   <button class="btn d-flex align-items-center gap-3 bg-success bg-opacity-25 rounded-pill px-4 py-2 mb-4 filter-btn" 
+   onclick="filtrar('vestido')">Vestidos</button>
+  </div>
+    
           <!-- Producto 1 -->
-          <div class="col">
-            <div class="card h-100">
-              <img src="URL_IMAGEN" class="card-img-top" alt="Vestido">
-              <div class="card-body">
-                <div class="d-flex justify-content-between">
-                  <h5 class="card-title mb-0">Vestido</h5>
-                  <span class="text-muted">$ 102.000</span>
-                </div>
-                <p class="card-text small">Ut sollicitudin, convallis, viverra amet, diam vehicula...</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="text-warning">
-                    ★★★★☆
-                  </div>
-                  <i class="bi bi-cart3 fs-5"></i>
-                </div>
-              </div>
-            </div>
-        </div>
-        </div>
-      </div>
+          <section id="galeria" class="row">
+
+          </section>
+
+          
       <!--Descuentos-->
       <section class="container my-5">
         <div class="row align-items-center bg-light">
           <!-- Imagen -->
-          <div class="col-md-6 p-0">
-            <img src="ruta-de-la-imagen.jpg" alt="Descuento" class="img-fluid w-100">
+          <div class="col-md-5 p-0">
+            <img src="../img/sale.jpg" alt="Descuento" class="img-fluid imagen-ajustada">
           </div>
       
           <!-- Texto y botón -->

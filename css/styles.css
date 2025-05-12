@@ -10,11 +10,13 @@ body {
   }
 
   .header-logo {
+    max-width: 200px;
     height: 200px;
     border: 2px solid black;
     border-radius: 50%;
     background-color: white;
     padding: 5px;
+    
   }
 
   .header-title {
@@ -28,12 +30,13 @@ body {
     padding: 10px 20px;
     font-weight: bold;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     margin: 0 10px;
   }
 
   .cart-icon {
-    font-size: 50px;
+    font-size: 10px;
+    border-radius: 10%;
     cursor: pointer; 
     margin:  30px;
     margin-top: 50px;   
@@ -46,30 +49,26 @@ body {
         width: 100%;
   } 
 }
-  .categoria-btn {
-    background-color: #c2e4d3;
+.filter-btn {
+    background-color: #d4e9d6; /* color verde suave */
+    border-radius: 2rem;
     border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+    width: 300px; /* o ajusta según tu necesidad */
   }
-  .categoria-img {
+
+  .filter-btn img {
     width: 60px;
     height: 60px;
+    object-fit: cover;
     border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 5px;
   }
-  .producto-img {
-    height: 300px;
-    object-fit: cover;
-  }
-  .card-body p {
-    font-size: 0.9rem;
-  }
-  .precio {
-    font-weight: bold;
-  }
+
+  
+  
   .icono-carrito {
     font-size: 1.5rem;
     cursor: pointer;
@@ -104,3 +103,13 @@ body {
     font-weight: bold;
     color: #222;
   }
+  .imagen-ajustada {
+    max-width: 400px;
+    height: 350px;
+    margin: 10px;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
