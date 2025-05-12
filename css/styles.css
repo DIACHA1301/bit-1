@@ -1,6 +1,9 @@
+
+
 body {
     margin: 0;
     padding: 0;
+    background: #F9F9F9;
   }
 
   header {
@@ -10,12 +13,13 @@ body {
   }
 
   .header-logo {
-    max-width: 200px;
+    max-width: 150px;
+    max-height: 150px;
     height: 200px;
     border: 2px solid black;
     border-radius: 50%;
     background-color: white;
-    padding: 5px;
+    padding: 15px;
     
   }
 
@@ -26,30 +30,61 @@ body {
   }
 
   .nav-btn {
-    background-color: #f6ebdb;
-    padding: 10px 20px;
+    background-color: #f5eee4;
+    color: black;
     font-weight: bold;
+    padding: 0.75rem 1rem;
     border: none;
-    border-radius: 10px;
-    margin: 0 10px;
+    border-radius: 15px;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    min-width: 120px;
+    max-width: 180px;
+    flex: 1 1 calc(50% - 1rem); /* 2 por fila en móviles */
+  }
+  
+  
+  /* Ajustes responsive */
+  @media (min-width: 768px) {
+    .nav-btn {
+      flex: 0 0 auto;
+      min-width: 150px;
+    }
+
+  
+
+  .icono-carrito {
+    width: 75px;
+    height: 65px;
+    padding-right: 10px;
+    margin: 20px;
+    border-radius: 50%;
+    cursor: pointer;
   }
 
   .cart-icon {
-    font-size: 10px;
-    border-radius: 10%;
-    cursor: pointer; 
-    margin:  30px;
-    margin-top: 50px;   
+    background-color: #f5eee4;
+    border-radius: 30%;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    padding: 5px;
   }
   .carousel-item{
     img {
-        padding: 60px;
+        padding: 10px;
         max-height: 600px; 
         object-fit: cover;
         width: 100%;
   } 
 }
 .filter-btn {
+  
+  text-align: center;
     background-color: #d4e9d6; /* color verde suave */
     border-radius: 2rem;
     border: none;
@@ -57,59 +92,21 @@ body {
     align-items: center;
     padding: 0.5rem 1rem;
     gap: 1rem;
-    width: 300px; /* o ajusta según tu necesidad */
+    width: 300px; 
   }
 
-  .filter-btn img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-
-  
-  
-  .icono-carrito {
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  .filtro-item {
-    width: 300px;
-    display: flex;
-    align-items: center;
-    background-color: #c4e3cd; /* verde suave */
-    padding: 0.5rem 1rem;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .filtro-item:hover {
-    background-color: #a5d4b6;
-  }
-
-  .filtro-img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-
-  .filtro-texto {
-    margin-left: 50px;
-    font-size: 25px;
-    text-align: center;
-    font-weight: bold;
-    color: #222;
-  }
-  .imagen-ajustada {
-    max-width: 400px;
-    height: 350px;
-    margin: 10px;
-}
 .card-img-top {
   height: 200px;
   object-fit: cover;
   width: 100%;
+}}
+.social-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.copyright-icon {
+  width: 150px;
+  height: auto;
 }
