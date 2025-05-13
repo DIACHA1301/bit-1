@@ -1,10 +1,10 @@
 'use strict';
 const imagenes =[
 
-    {src: '/assets/foto1.jpg', categoria: "pantalon", nombre: 'Pantalon', precio: '$ 150.000'},
-    {src: '/assets/foto2.png', categoria: "pantalon", nombre: 'Pantalon', precio: '$ 150.000'},
-    {src: '/assets/foto3.jpg', categoria: "pantalon", nombre: 'Pantalon', precio: '$ 150.000'},
-    {src: '/assets/foto4.jpg', categoria: "pantalon", nombre: 'Pantalon', precio: '$ 150.000'},
+    {src: 'assets/foto1.jpg', categoria: "pantalon", nombre: 'Pantalon', precio: '$ 150.000'},
+    {src: 'assets/foto2.png', categoria: "pantalon", nombre: 'Pantalon', precio: '$ 150.000'},
+    {src: 'assets/foto3.jpg', categoria: "pantalon", nombre: 'Pantalon', precio: '$ 150.000'},
+    {src: 'assets/foto4.jpg', categoria: "pantalon", nombre: 'Pantalon', precio: '$ 150.000'},
 
     {src: '/assets/shirt1.jpg', categoria: "blusa", nombre: 'Blusa', precio: '$ 102.000'},
     {src: '/assets/shirt2.jpg', categoria: "blusa", nombre: 'Blusa', precio: '$ 102.000'},
